@@ -1,0 +1,23 @@
+@import '../../style/colors.css';
+
+.containerImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.image{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.containerNumberText{
+    display:none;
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 1440px) {
+    .image{border-radius:25px;}
+    .containerNumberText{display:flex; align-items: center; position:absolute;top: 88%;left: 49%;font-size:1.125rem; font-weight: 500;line-height: 1.6rem;color:var(--secondary-color);}
+}

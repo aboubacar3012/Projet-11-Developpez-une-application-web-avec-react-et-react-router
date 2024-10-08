@@ -1,0 +1,37 @@
+@import '../../style/colors.css';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.875rem 0;
+    background-color: var(--tertiary-color);
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.logo {
+    width: 100%;
+    max-width: 122px;
+}
+
+.copy {
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    padding-top: 1.55rem;
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 1440px) {
+    .footer {
+        padding: 4.125rem 0 1.813rem 0;
+    }
+
+    .copy {
+        font-size: 1.5rem;
+        padding-top: 2.28rem;
+        line-height: 2.139rem;
+    }
+}
