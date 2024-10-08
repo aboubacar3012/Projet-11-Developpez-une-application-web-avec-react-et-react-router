@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Projet 11 - Développez une application Web avec React et React Router
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Contexte du projet
 
-## Available Scripts
+Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
+Le site de Kasa a été codé il y a maintenant plus de 10 ans en http://ASP.NET avec un code legacy important. Aujourd’hui, Kasa souhaite passer à une stack complète en JavaScript avec NodeJS côté Back-end, et React côté Front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel.
 
-In the project directory, you can run:
+## Mission du projet
 
-### `npm start`
+La mission pour ce projet était de faire la refonte du site de Kasa : développer l’ensemble de l’application, les pages, les composants React et les routes React Router.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies utilisées
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React : pas de librairie React externe
+- React Router : gérer les routes
+- Modules CSS : gérer le css
+- Prettier : mettre en forme le code
+- ESLint : indiquer les erreurs et sécuriser le code
+- Figma : consulter les maquettes
+- Github : versionner le code
 
-### `npm test`
+## Maquettes à respecter
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La base des maquettes a été créée via [Figma](<https://www.figma.com/design/RQLe95Dl8I0TAVqNwjJKVf/Kasa_FR-(Copy)?node-id=0-1&node-type=canvas&t=RTYPaeT2jMIJQawE-0>).
 
-### `npm run build`
+### Page d'accueil
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Maquette Kasa accueil](/public/assets/maquettes/D_Home.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Notes et contraintes du projet
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Police :**
 
-### `npm run eject`
+- Polices : [DM Sans ](https://fonts.google.com/specimen/DM+Sans?query=dm+sans)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Couleurs :**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Rouge : #FF6060
+- Gris : #F6F6F6
+- Noir : #000000
+- Blanc : #FFFFFF
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Contraintes :**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Techniques (cf le ![guidline](/public/assets/maquettes/Coding+guidelines+Kasa+FR.pdf))
 
-## Learn More
+  - Réaliser des composants modulaires et réutilisables
+  - Faire un composant par fichier
+  - Structurer logiquement les différents fichiers
+  - Utiliser des props entre les composants
+  - Utiliser du state dans les composants quand c'est nécessaire
+  - Gérer les événements
+  - Utiliser la méthode map
+  - Privilégier les composants fonctionnels plutôt que des composants classes
+  - Gérer les paramètres des routes avec React Router dans l'URL et récupérer les informations de chaque logement
+  - Créer une page par route
+  - Renvoyer la page 404 pour chaque route inexistante, ou si une valeur présente dans l’URL ne fait pas partie des données renseignées
+  - Réunir la logique du routeur dans un seul fichier
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Approche et maquettes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  - Approche : mobile first
+  - Maquette desktop : oui
+  - Maquette tablette : à improviser
+  - Maquette mobile : oui
 
-### Code Splitting
+- Validateurs
+  - Aucune erreur ou warning dans la console
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Tester le projet
 
-### Analyzing the Bundle Size
+Pour tester simplement et rapidement le projet, vous pouvez visiter la démo en ligne : ####
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Sinon, vous pouvez également cloner le projet :
 
-### Making a Progressive Web App
+Lien
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Accédez au répertoire du projet puis utilisez la commande `npm install` pour installer les dépendances du projet et `npm start` pour ouvrir l'application dans votre navigateur.
